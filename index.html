@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fce4ec;
+            color: #5d4037;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Tipografía de los títulos */
+        h1, h2, h3 {
+            font-family: 'Fantasy', Impact, sans-serif;
+        }
+
+        /* Header */
+        header {
+            background-color: #d1c4e9;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            color: #6a1b9a;
+        }
+
+        /* Perfil */
+        .profile {
+            background-color: #f8bbd0;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            width: 80%;
+            text-align: center;
+        }
+
+        /* Emoji de cámara con animación */
+        .profile-pic {
+            font-size: 100px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Hechos Curiosos con fondo */
+        .fun-facts {
+            background-color: #f3e5f5; /* Color claro */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            width: 80%;
+            text-align: left;
+        }
+
+        .fun-facts h3 {
+            background-color: #d1c4e9;
+            padding: 10px;
+            border-radius: 5px;
+            color: #4a148c; /* Texto que combine */
+        }
+
+        /* Estrellitas */
+        .fun-facts ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .fun-facts li {
+            margin-bottom: 15px;
+        }
+
+        .fun-facts li:before {
+            content: "⭐";
+            margin-right: 10px;
+        }
+
+        /* Corazón */
+        .heart {
+            font-size: 60px; /* Tamaño del corazón */
+            text-align: center;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+
+        #like-count {
+            font-size: 14px; /* Tamaño del contador */
+            color: #7b1fa2;
+        }
+
+        /* Comentarios */
+        .comments {
+            background-color: #e1bee7;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            width: 80%;
+        }
+
+        .comments h3 {
+            text-align: center;
+            color: #6a1b9a;
+        }
+
+        /* Cambiar título de comentarios */
+        h3 {
+            text-align: center;
+            color: #6a1b9a;
+        }
+
+        #comment {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: transparent; /* Sin fondo blanco */
+            border: 1px solid #ba68c8;
+            margin: 0; /* Eliminar margen */
+        }
+
+        button[type="submit"] {
+            background-color: #ba68c8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 10px auto; /* Centrado */
+        }
+
+        button[type="submit"]:hover {
+            background-color: #ab47bc;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #7b1fa2;
+        }
+
+        /* Juego mental */
+        .game {
+            background-color: #f3e5f5;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .game h3 {
+            color: #4a148c;
+        }
+
+        .game button {
+            background-color: #ba68c8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .game button:hover {
+            background-color: #ab47bc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡Sobre Helen!</h1>
+        <p>Un lugar para conocer más sobre mí</p>
+    </header>
+
+    <section class="profile">
+        <div class="profile-pic">📸</div>
+        <h2>Helen Quevedo </h2>
+        <p>Tengo 20 años y soy estudiante de Ingeniería en Sistemas. Soy una persona a la que le apasionan el baile, la música, patinar y la fotografía. Cuando no estoy estudiando, suelo pasar mi tiempo libre escuchando musica o saliendo con mi pareja. Me encanta también sumergirme en un buen libro, lo hago con bastante frecuencia.</p>
+        <p>Me considero amante de la comida casera, pero no puedo resistirme a la carne, son mi mayor debilidad. Mi color favorito es el lila, aunque tengo una afinidad por casi todos los colores pasteles.</p>
+    </section>
+
+    <section class="fun-facts">
+        <h3>Hechos Curiosos</h3>
+        <ul>
+            <li>Aunque muchos no lo crean, soy una chica introvertida. Me gusta ser prudente y suelo guardarme mis pensamientos cuando algo me molesta.</li>
+            <li>Me enojo con facilidad por pequeños detalles, pero casi siempre prefiero no expresarlo y los dejo como un pensamiento pasajero.</li>
+            <li>A veces divago, lo que me lleva a olvidar lo que estaba pensando o haciendo en ese momento.</li>
+        </ul>
+    </section>
+
+    <!-- /*Juego */-->
+    <section class="game">
+        <h3>Adivina un número del 1 al 10</h3>
+        <p>¿Qué tanta suerte tienes?</p>
+        <input type="number" id="guess" placeholder="Digita">
+        <button onclick="checkGuess()">Enviar</button>
+        <p id="result"></p>
+    </section>
+
+    <section class="heart">
+        <div id="like-button">❤️</div>
+        <p id="like-count">0 me encanta</p>
+    </section>
+
+    <section class="comments">
+        <h3>¡¡¡Comenta!!!</h3>
+        <form id="comment-form">
+            <textarea id="comment" placeholder="Escribe tu opinión acerca de mí"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="comment-section"></div>
+    </section>
+
+    <footer>
+        <p>"Tienes que ser exitoso porque te gusta lo caro"</p>
+        <p>"Escucha, Piensa y Opina"</p>
+    </footer>
+
+    <script>
+        // Contador de "Me encanta"
+        let likeCount = 0;
+
+        document.getElementById('like-button').addEventListener('click', function() {
+            likeCount++;
+            document.getElementById('like-count').textContent = likeCount + " me encanta";
+        });
+
+        // Función para agregar comentarios
+        document.getElementById('comment-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let commentText = document.getElementById('comment').value;
+            if (commentText) {
+                let commentSection = document.getElementById('comment-section');
+                let newComment = document.createElement('p');
+                newComment.textContent = commentText;
+                commentSection.appendChild(newComment);
+                document.getElementById('comment').value = '';
+            }
+        });
+
+        // Juego Mental
+        function checkGuess() {
+            const guess = document.getElementById("guess").value;
+            const randomNum = Math.floor(Math.random() * 10) + 1;
+            const result = document.getElementById("result");
+
+            if (guess == randomNum) {
+                result.textContent = "¡Felicidades! Has adivinado el número " + randomNum;
+            } else {
+                result.textContent = "Lo siento, el número era " + randomNum + ". Intenta de nuevo.";
+            }
+        }
+    </script>
+</body>
+</html>
